@@ -12,6 +12,7 @@ import { ModelSelector } from './model-selector'
 import { SearchModeToggle } from './search-mode-toggle'
 import { Button } from './ui/button'
 import { IconLogo } from './ui/icons'
+import ChatInput from './chat-input'
 
 interface ChatPanelProps {
   input: string
@@ -83,7 +84,7 @@ export function ChatPanel({
     >
       {messages.length === 0 && (
         <div className="mb-8">
-          <IconLogo className="size-12 text-muted-foreground" />
+          <IconLogo className="size-20 text-muted-foreground" />
         </div>
       )}
       <form
@@ -93,7 +94,7 @@ export function ChatPanel({
           messages.length > 0 ? 'px-2 py-4' : 'px-6'
         )}
       >
-        <div className="relative flex flex-col w-full gap-2 bg-muted rounded-3xl border border-input">
+        <div className="relative flex flex-col w-full justify-between gap-2 bg-muted rounded-3xl border border-input min-h-36">
           <Textarea
             ref={inputRef}
             name="input"
@@ -105,7 +106,7 @@ export function ChatPanel({
             placeholder="Ask a question..."
             spellCheck={false}
             value={input}
-            className="resize-none w-full min-h-12 bg-transparent border-0 px-4 py-3 text-sm placeholder:text-muted-foreground focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+            className="resize-none w-full min-h-12 bg-transparent border-0 px-4 py-4 text-sm placeholder:text-muted-foreground focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50"
             onChange={e => {
               handleInputChange(e)
               setShowEmptyScreen(e.target.value.length === 0)
@@ -133,6 +134,7 @@ export function ChatPanel({
           {/* Bottom menu area */}
           <div className="flex items-center justify-between p-3">
             <div className="flex items-center gap-2">
+              <ChatInput />
               <ModelSelector models={models || []} />
               <SearchModeToggle />
             </div>

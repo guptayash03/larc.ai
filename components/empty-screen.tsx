@@ -15,8 +15,8 @@ const exampleMessages = [
     message: 'Tesla vs Rivian'
   },
   {
-    heading: 'Summary: https://arxiv.org/pdf/2501.05707',
-    message: 'Summary: https://arxiv.org/pdf/2501.05707'
+    heading: 'Summary: OpenAi Latest Breakthroughs',
+    message: 'Summary: OpenAi Latest Breakthroughs'
   }
 ]
 export function EmptyScreen({
