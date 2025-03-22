@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import { SiGithub, SiInstagram, SiLinkedin } from 'react-icons/si'
+import { SiInstagram, SiLinkedin, SiYoutube } from 'react-icons/si'
 import { Button } from './ui/button'
 
 const Footer: React.FC = () => {
@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
           className="text-muted-foreground/50"
         >
           <Link href="#" target="_blank">
-            <SiGithub size={18} />
+            <SiYoutube size={20} />
           </Link>
         </Button>
       </div>

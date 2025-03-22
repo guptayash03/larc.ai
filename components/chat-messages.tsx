@@ -90,7 +90,7 @@ export function ChatMessages({
   }
 
   return (
-    <div className="relative mx-auto px-4 w-full">
+    <div className="relative mx-auto px-4 w-full overflow-hidden">
       {messages.map(message => (
         <div key={message.id} className="mb-4 flex flex-col gap-4">
           <RenderMessage
