@@ -1,12 +1,12 @@
 import Footer from '@/components/footer'
 import Header from '@/components/header'
+import { Sidebar } from '@/components/sidebar'
 import { ThemeProvider } from '@/components/theme-provider'
 import { Toaster } from '@/components/ui/sonner'
 import { cn } from '@/lib/utils'
 import type { Metadata, Viewport } from 'next'
 import { Inter as FontSans } from 'next/font/google'
 import './globals.css'
-import { Sidebar } from '@/components/sidebar'
 
 const fontSans = FontSans({
   subsets: ['latin'],
@@ -14,8 +14,7 @@ const fontSans = FontSans({
 })
 
 const title = 'Larc Ai - New Chat'
-const description =
-  'All In One App Store of AI Models.'
+const description = 'A Smart Platform for All LLMs & Agents'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://larc.ai'),
@@ -64,7 +63,7 @@ export default function RootLayout({
               <Footer />
               <Toaster />
             </div>
-          </div>        
+          </div>
         </ThemeProvider>
       </body>
     </html>

@@ -12,7 +12,10 @@ const Footer: React.FC = () => {
           size={'icon'}
           className="text-muted-foreground/50"
         >
-          <Link href="#" target="_blank">
+          <Link
+            href="https://www.linkedin.com/company/the-larc-ai/"
+            target="_blank"
+          >
             <SiInstagram size={18} />
           </Link>
         </Button>
@@ -21,8 +24,11 @@ const Footer: React.FC = () => {
           size={'icon'}
           className="text-muted-foreground/50"
         >
-          <Link href="#" target="_blank">
-           <SiLinkedin size={18} />
+          <Link
+            href="https://www.linkedin.com/company/the-larc-ai/"
+            target="_blank"
+          >
+            <SiLinkedin size={18} />
           </Link>
         </Button>
         <Button
@@ -30,7 +36,10 @@ const Footer: React.FC = () => {
           size={'icon'}
           className="text-muted-foreground/50"
         >
-          <Link href="#" target="_blank">
+          <Link
+            href="https://www.linkedin.com/company/the-larc-ai/"
+            target="_blank"
+          >
             <SiYoutube size={20} />
           </Link>
         </Button>

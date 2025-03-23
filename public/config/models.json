@@ -53,7 +53,7 @@
       "name": "<AZURE_DEPLOYMENT_NAME>",
       "provider": "Azure",
       "providerId": "azure",
-      "enabled": true,
+      "enabled": false,
       "toolCallType": "native"
     },
     {
@@ -87,7 +87,7 @@
       "name": "DeepSeek R1",
       "provider": "Fireworks",
       "providerId": "fireworks",
-      "enabled": true,
+      "enabled": false,
       "toolCallType": "manual",
       "toolCallModel": "accounts/fireworks/models/llama-v3p1-8b-instruct"
     },
@@ -96,7 +96,7 @@
       "name": "DeepSeek R1",
       "provider": "DeepSeek",
       "providerId": "deepseek",
-      "enabled": true,
+      "enabled": false,
       "toolCallType": "manual",
       "toolCallModel": "deepseek-chat"
     },
@@ -105,7 +105,7 @@
       "name": "DeepSeek V3",
       "provider": "DeepSeek",
       "providerId": "deepseek",
-      "enabled": true,
+      "enabled": false,
       "toolCallType": "manual"
     },
     {
@@ -113,7 +113,7 @@
       "name": "DeepSeek R1 Distill Llama 70B",
       "provider": "Groq",
       "providerId": "groq",
-      "enabled": true,
+      "enabled": false,
       "toolCallType": "manual",
       "toolCallModel": "llama-3.1-8b-instant"
     },
@@ -122,7 +122,7 @@
       "name": "DeepSeek R1",
       "provider": "Ollama",
       "providerId": "ollama",
-      "enabled": true,
+      "enabled": false,
       "toolCallType": "manual",
       "toolCallModel": "phi4"
     },
@@ -131,7 +131,7 @@
       "name": "<OLLAMA_MODEL_NAME>",
       "provider": "Ollama",
       "providerId": "ollama",
-      "enabled": true,
+      "enabled": false,
       "toolCallType": "manual",
       "toolCallModel": "<OLLAMA_MODEL_ID>"
     },
@@ -140,7 +140,7 @@
       "name": "Grok 2",
       "provider": "xAI",
       "providerId": "xai",
-      "enabled": true,
+      "enabled": false,
       "toolCallType": "native"
     },
     {
@@ -148,16 +148,32 @@
       "name": "Grok 2 Vision",
       "provider": "xAI",
       "providerId": "xai",
+      "enabled": false,
+      "toolCallType": "native"
+    },
+    {
+      "id": "mistral-large-latest",
+      "name": "Mistral Large",
+      "provider": "Mistral",
+      "providerId": "mistral",
       "enabled": true,
       "toolCallType": "native"
     },
     {
-      "id": "<OPENAI_COMPATIBLE_MODEL>",
-      "name": "<OPENAI_COMPATIBLE_MODEL>",
-      "provider": "OpenAI Compatible",
-      "providerId": "openai-compatible",
+      "id": "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
+      "name": "Llama 3.1",
+      "provider": "TogetherAi",
+      "providerId": "togetherai",
       "enabled": true,
       "toolCallType": "native"
+    },
+    {
+      "id": "sonar-pro",
+      "name": "Perplexity Sonar Pro",
+      "provider": "Perplexity",
+      "providerId": "perplexity",
+      "enabled": true,
+      "toolCallType": "manual"
     }
   ]
 }

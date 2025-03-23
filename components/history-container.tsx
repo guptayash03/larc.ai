@@ -9,7 +9,7 @@ const HistoryContainer: React.FC = async () => {
   }
 
   return (
-    <div>
+    <div className="block md:hidden">
       <History>
         <HistoryList userId="anonymous" />
       </History>

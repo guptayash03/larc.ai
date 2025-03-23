@@ -47,7 +47,7 @@ export function Chat({
 
   useEffect(() => {
     setMessages(savedMessages)
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id])
 
   const onQuerySelect = (query: string) => {
@@ -64,14 +64,14 @@ export function Chat({
   }
 
   return (
-    <div className='flex flex-col justify-center h-[100%] w-full max-w-3xl pt-14 mx-auto'>
-      <div className='flex-1 overflow-y-scroll pt-10 md:pt-5 scrollbar-hide'>
+    <div className="flex flex-col justify-center h-[100%] w-full max-w-3xl pt-14 mx-auto">
+      <div className="flex-1 overflow-y-scroll pt-10 md:pt-5 scrollbar-hide">
         <ChatMessages
-            messages={messages}
-            data={data}
-            onQuerySelect={onQuerySelect}
-            isLoading={isLoading}
-            chatId={id}
+          messages={messages}
+          data={data}
+          onQuerySelect={onQuerySelect}
+          isLoading={isLoading}
+          chatId={id}
         />
       </div>
       <div>
@@ -88,8 +88,6 @@ export function Chat({
           models={models}
         />
       </div>
-
     </div>
-
   )
 }
